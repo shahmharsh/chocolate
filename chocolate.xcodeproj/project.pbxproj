@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0378373C1F3FD23900996C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0378373A1F3FD23900996C9F /* ViewController.swift */; };
-		0378373D1F3FD23900996C9F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0378373B1F3FD23900996C9F /* ViewController.xib */; };
+		037837441F3FE2EF00996C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037837421F3FE2EF00996C9F /* ViewController.swift */; };
+		037837451F3FE2EF00996C9F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037837431F3FE2EF00996C9F /* ViewController.xib */; };
 		03F810701F3FCBB300CB3D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8106F1F3FCBB300CB3D78 /* AppDelegate.swift */; };
 		03F810771F3FCBB300CB3D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F810761F3FCBB300CB3D78 /* Assets.xcassets */; };
 		03F810851F3FCBB300CB3D78 /* chocolateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F810841F3FCBB300CB3D78 /* chocolateTests.swift */; };
@@ -27,8 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0378373A1F3FD23900996C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0378373B1F3FD23900996C9F /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		037837421F3FE2EF00996C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		037837431F3FE2EF00996C9F /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		03F8106C1F3FCBB300CB3D78 /* chocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8106F1F3FCBB300CB3D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F810761F3FCBB300CB3D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,9 +89,9 @@
 			children = (
 				03F8107B1F3FCBB300CB3D78 /* Info.plist */,
 				03F8106F1F3FCBB300CB3D78 /* AppDelegate.swift */,
-				0378373A1F3FD23900996C9F /* ViewController.swift */,
-				0378373B1F3FD23900996C9F /* ViewController.xib */,
 				03F810761F3FCBB300CB3D78 /* Assets.xcassets */,
+				037837421F3FE2EF00996C9F /* ViewController.swift */,
+				037837431F3FE2EF00996C9F /* ViewController.xib */,
 			);
 			path = chocolate;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0378373D1F3FD23900996C9F /* ViewController.xib in Resources */,
+				037837451F3FE2EF00996C9F /* ViewController.xib in Resources */,
 				03F810771F3FCBB300CB3D78 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0378373C1F3FD23900996C9F /* ViewController.swift in Sources */,
+				037837441F3FE2EF00996C9F /* ViewController.swift in Sources */,
 				03F810701F3FCBB300CB3D78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
