@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		037837441F3FE2EF00996C9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037837421F3FE2EF00996C9F /* ViewController.swift */; };
 		037837451F3FE2EF00996C9F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037837431F3FE2EF00996C9F /* ViewController.xib */; };
+		037837481F40090700996C9F /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037837471F40090700996C9F /* Chocolate.swift */; };
 		03F810701F3FCBB300CB3D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F8106F1F3FCBB300CB3D78 /* AppDelegate.swift */; };
 		03F810771F3FCBB300CB3D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F810761F3FCBB300CB3D78 /* Assets.xcassets */; };
 		03F810851F3FCBB300CB3D78 /* chocolateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F810841F3FCBB300CB3D78 /* chocolateTests.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		037837421F3FE2EF00996C9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		037837431F3FE2EF00996C9F /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		037837471F40090700996C9F /* Chocolate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
 		03F8106C1F3FCBB300CB3D78 /* chocolate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chocolate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03F8106F1F3FCBB300CB3D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03F810761F3FCBB300CB3D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037837461F4008E500996C9F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				037837471F40090700996C9F /* Chocolate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		03F810631F3FCBB300CB3D78 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		03F8106E1F3FCBB300CB3D78 /* chocolate */ = {
 			isa = PBXGroup;
 			children = (
+				037837461F4008E500996C9F /* Model */,
 				03F8107B1F3FCBB300CB3D78 /* Info.plist */,
 				03F8106F1F3FCBB300CB3D78 /* AppDelegate.swift */,
 				03F810761F3FCBB300CB3D78 /* Assets.xcassets */,
@@ -336,6 +347,7 @@
 			files = (
 				037837441F3FE2EF00996C9F /* ViewController.swift in Sources */,
 				03F810701F3FCBB300CB3D78 /* AppDelegate.swift in Sources */,
+				037837481F40090700996C9F /* Chocolate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
