@@ -481,6 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4TXS6T9GMD;
 				INFOPLIST_FILE = chocolate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.chocolate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4TXS6T9GMD;
 				INFOPLIST_FILE = chocolate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harsh.chocolate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -553,6 +555,7 @@
 				03F8108B1F3FCBB300CB3D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		03F8108C1F3FCBB300CB3D78 /* Build configuration list for PBXNativeTarget "chocolateTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +564,7 @@
 				03F8108E1F3FCBB300CB3D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
