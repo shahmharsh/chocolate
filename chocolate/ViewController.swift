@@ -17,11 +17,11 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        tableView.tableFooterView = UIView(frame: .zero)
         loadSampleChocolates()
     }
     
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
