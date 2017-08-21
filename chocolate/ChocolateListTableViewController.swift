@@ -1,21 +1,22 @@
 //
-//  ViewController.swift
+//  ChocolateListTableViewController.swift
 //  chocolate
 //
-//  Created by Harsh Shah on 8/12/17.
+//  Created by Harsh Shah on 8/20/17.
 //  Copyright © 2017 Harsh Shah. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UITableViewController {
-    
+class ChocolateListTableViewController: UITableViewController {
+        
     let cellIdentifier = "chocolateCellIdentifier"
     
     var chocolates = [Chocolate]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Chocolates"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         tableView.tableFooterView = UIView(frame: .zero)
         loadSampleChocolates()
@@ -25,7 +26,7 @@ class ViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chocolates.count
     }
@@ -41,7 +42,7 @@ class ViewController: UITableViewController {
     private func loadSampleChocolates() {
         let chocolate1 = Chocolate("Five Star")
         let chocolate2 = Chocolate("Dairy Milk")
-        let chocolate3 = Chocolate("Lindt");
-        chocolates += [chocolate1, chocolate2, chocolate3];
+        let chocolate3 = Chocolate("Lindt")
+        chocolates += [chocolate1, chocolate2, chocolate3]
     }
 }
