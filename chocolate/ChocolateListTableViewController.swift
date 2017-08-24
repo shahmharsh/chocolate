@@ -17,12 +17,17 @@ class ChocolateListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Chocolates"
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+        let nib = UINib(nibName: "ChocolateTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
         tableView.tableFooterView = UIView(frame: .zero)
         loadSampleChocolates()
     }
     
     // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75.0
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -32,17 +37,20 @@ class ChocolateListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = chocolates[indexPath.row].name
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ChocolateTableViewCell else {
+            fatalError("The dequeued cell is not an instance of ChocolateTableViewCell")
+        }
+        cell.title.text = chocolates[indexPath.row].name
+        cell.desc.text = chocolates[indexPath.row].desc
         return cell
     }
     
     //MARK: Private methods
     
     private func loadSampleChocolates() {
-        let chocolate1 = Chocolate("Five Star")
-        let chocolate2 = Chocolate("Dairy Milk")
-        let chocolate3 = Chocolate("Lindt")
+        let chocolate1 = Chocolate("Five Star", description: "My favourite")
+        let chocolate2 = Chocolate("Dairy Milk", description: "Nidhos favourite")
+        let chocolate3 = Chocolate("Lindt", description: "Rias favourite")
         chocolates += [chocolate1, chocolate2, chocolate3]
     }
 }

@@ -11,8 +11,10 @@ import Foundation
 class Chocolate {
     var imageUrl: URL?
     private(set) var name: String
+    private(set) var desc: String
     
-    init(_ name: String) {
-        self.name = name;
+    init(_ name: String, description desc:String) {
+        self.name = name
+        self.desc = desc
     }
 }
