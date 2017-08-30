@@ -40,9 +40,11 @@ class ChocolateListTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ChocolateTableViewCell else {
             fatalError("The dequeued cell is not an instance of ChocolateTableViewCell")
         }
-        cell.title.text = chocolates[indexPath.row].name
-        cell.desc.text = chocolates[indexPath.row].desc
-        cell.chocolateImage?.image = UIImage(named: "Chocolate")
+        
+        let chocolate = chocolates[indexPath.row]
+        cell.title.text = chocolate.name
+        cell.desc.text = chocolate.desc
+        cell.chocolateImage?.image = chocolate.image
         return cell
     }
     
