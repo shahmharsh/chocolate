@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="73.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chocolate" translatesAutoresizingMaskIntoConstraints="NO" id="4Ch-dS-aWz">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Ch-dS-aWz">
                         <rect key="frame" x="0.0" y="0.0" width="70" height="73.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="jIW-ES-OBF"/>
@@ -58,7 +58,4 @@
             <point key="canvasLocation" x="118" y="-100"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="Chocolate" width="232" height="132"/>
-    </resources>
 </document>

@@ -42,6 +42,7 @@ class ChocolateListTableViewController: UITableViewController {
         }
         cell.title.text = chocolates[indexPath.row].name
         cell.desc.text = chocolates[indexPath.row].desc
+        cell.chocolateImage?.image = UIImage(named: "Chocolate")
         return cell
     }
     
