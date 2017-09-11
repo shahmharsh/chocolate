@@ -19,7 +19,6 @@
 		03F810771F3FCBB300CB3D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F810761F3FCBB300CB3D78 /* Assets.xcassets */; };
 		03F810851F3FCBB300CB3D78 /* chocolateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F810841F3FCBB300CB3D78 /* chocolateTests.swift */; };
 		5A6549905CB06580CA78AF6A /* Pods_chocolate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF74B9F21FD6EED1976BF76 /* Pods_chocolate.framework */; };
-		CE0218677A16085C38AAD218 /* Pods_chocolateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BCCFC918055C8BAB3A9765 /* Pods_chocolateTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +49,7 @@
 		03F810861F3FCBB300CB3D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55BCCFC918055C8BAB3A9765 /* Pods_chocolateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chocolateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		874398CC3686128E8864A6CC /* Pods-chocolate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chocolate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chocolate/Pods-chocolate.debug.xcconfig"; sourceTree = "<group>"; };
-		98733014E6CB52ACCDCDCDAF /* Pods-chocolateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chocolateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-chocolateTests/Pods-chocolateTests.release.xcconfig"; sourceTree = "<group>"; };
 		BBF74B9F21FD6EED1976BF76 /* Pods_chocolate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chocolate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5955AEA796F763DCDC8A8C2 /* Pods-chocolateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chocolateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chocolateTests/Pods-chocolateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF022CEFAC9A11479EACAEC0 /* Pods-chocolate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chocolate.release.xcconfig"; path = "Pods/Target Support Files/Pods-chocolate/Pods-chocolate.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE0218677A16085C38AAD218 /* Pods_chocolateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +132,6 @@
 			children = (
 				874398CC3686128E8864A6CC /* Pods-chocolate.debug.xcconfig */,
 				EF022CEFAC9A11479EACAEC0 /* Pods-chocolate.release.xcconfig */,
-				D5955AEA796F763DCDC8A8C2 /* Pods-chocolateTests.debug.xcconfig */,
-				98733014E6CB52ACCDCDCDAF /* Pods-chocolateTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -178,12 +172,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03F8108C1F3FCBB300CB3D78 /* Build configuration list for PBXNativeTarget "chocolateTests" */;
 			buildPhases = (
-				2AD516D83E1CC70CE0FC00C2 /* [CP] Check Pods Manifest.lock */,
 				03F8107C1F3FCBB300CB3D78 /* Sources */,
 				03F8107D1F3FCBB300CB3D78 /* Frameworks */,
 				03F8107E1F3FCBB300CB3D78 /* Resources */,
-				4D91B63147396691C13CFE3F /* [CP] Embed Pods Frameworks */,
-				47DD70F7BCFC9AE6389535C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,61 +256,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-chocolate/Pods-chocolate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chocolate/Pods-chocolate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2AD516D83E1CC70CE0FC00C2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-chocolateTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		47DD70F7BCFC9AE6389535C2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chocolateTests/Pods-chocolateTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4D91B63147396691C13CFE3F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-chocolateTests/Pods-chocolateTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		92DC2E02666E1D6E3BA4A657 /* [CP] Check Pods Manifest.lock */ = {
@@ -515,7 +461,6 @@
 		};
 		03F8108D1F3FCBB300CB3D78 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5955AEA796F763DCDC8A8C2 /* Pods-chocolateTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -531,7 +476,6 @@
 		};
 		03F8108E1F3FCBB300CB3D78 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98733014E6CB52ACCDCDCDAF /* Pods-chocolateTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
