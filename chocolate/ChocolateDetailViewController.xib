@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChocolateDetailViewController" customModule="chocolate" customModuleProvider="target">
             <connections>
                 <outlet property="chocolateImage" destination="gBw-jp-a8Z" id="C5K-7w-uc6"/>
+                <outlet property="name" destination="8hF-qS-vuA" id="Rvk-0R-r5a"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

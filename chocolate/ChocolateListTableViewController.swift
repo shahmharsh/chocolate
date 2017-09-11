@@ -53,13 +53,13 @@ class ChocolateListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let chocolate = chocolates[indexPath.row]
+        let detailVc = ChocolateDetailViewController()
+        detailVc.chocolate = chocolates[indexPath.row]
+        navigationController?.pushViewController(detailVc, animated: true)
     }
     
     //MARK: Private methods
-    
     private func loadSampleChocolates() {
-        
         let decoder = JSONDecoder()
         let jsonData = chocolateJSON.data(using: .utf8)!
         chocolates = try! decoder.decode(Array<Chocolate>.self, from: jsonData)
