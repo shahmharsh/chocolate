@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		030147121F57BB6E005816DD /* ChocolateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030147101F57BB6E005816DD /* ChocolateDetailViewController.swift */; };
+		030147131F57BB6E005816DD /* ChocolateDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030147111F57BB6E005816DD /* ChocolateDetailViewController.xib */; };
 		037837481F40090700996C9F /* Chocolate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037837471F40090700996C9F /* Chocolate.swift */; };
 		037837521F4A64A400996C9F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037837511F4A64A400996C9F /* TabBarViewController.swift */; };
 		037837551F4A6A0000996C9F /* ChocolateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037837531F4A6A0000996C9F /* ChocolateListTableViewController.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		030147101F57BB6E005816DD /* ChocolateDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateDetailViewController.swift; sourceTree = "<group>"; };
+		030147111F57BB6E005816DD /* ChocolateDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChocolateDetailViewController.xib; sourceTree = "<group>"; };
 		037837471F40090700996C9F /* Chocolate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chocolate.swift; sourceTree = "<group>"; };
 		037837511F4A64A400996C9F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		037837531F4A6A0000996C9F /* ChocolateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChocolateListTableViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				037837541F4A6A0000996C9F /* ChocolateListTableViewController.xib */,
 				037837571F4E78B400996C9F /* ChocolateTableViewCell.swift */,
 				037837581F4E78B400996C9F /* ChocolateTableViewCell.xib */,
+				030147101F57BB6E005816DD /* ChocolateDetailViewController.swift */,
+				030147111F57BB6E005816DD /* ChocolateDetailViewController.xib */,
 			);
 			path = chocolate;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 			files = (
 				037837561F4A6A0000996C9F /* ChocolateListTableViewController.xib in Resources */,
 				03F810771F3FCBB300CB3D78 /* Assets.xcassets in Resources */,
+				030147131F57BB6E005816DD /* ChocolateDetailViewController.xib in Resources */,
 				0378375A1F4E78B400996C9F /* ChocolateTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +364,7 @@
 			files = (
 				037837591F4E78B400996C9F /* ChocolateTableViewCell.swift in Sources */,
 				037837551F4A6A0000996C9F /* ChocolateListTableViewController.swift in Sources */,
+				030147121F57BB6E005816DD /* ChocolateDetailViewController.swift in Sources */,
 				037837521F4A64A400996C9F /* TabBarViewController.swift in Sources */,
 				03F810701F3FCBB300CB3D78 /* AppDelegate.swift in Sources */,
 				037837481F40090700996C9F /* Chocolate.swift in Sources */,

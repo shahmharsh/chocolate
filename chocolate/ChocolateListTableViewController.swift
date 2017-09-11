@@ -9,7 +9,10 @@
 import UIKit
 
 class ChocolateListTableViewController: UITableViewController {
-        
+    
+    let chocolateJSON = """
+[{ "name": "Five Star", "desc": "My favorite", "price": 100, "imageUrl": "http://www.gervasivineyard.com/assets/client/Image/Events/chocolate1.jpg" }, { "name": "Dairy Milk", "desc": "Nidhos favorite", "price": 120, "imageUrl": "http://www.gervasivineyard.com/assets/client/Image/Events/chocolate1.jpg" }, { "name": "Lindt", "desc": "Rias favorite", "price": 150, "imageUrl": "http://www.gervasivineyard.com/assets/client/Image/Events/chocolate1.jpg" }]
+"""
     let cellIdentifier = "chocolateCellIdentifier"
     
     var chocolates = [Chocolate]()
@@ -44,16 +47,21 @@ class ChocolateListTableViewController: UITableViewController {
         let chocolate = chocolates[indexPath.row]
         cell.title.text = chocolate.name
         cell.desc.text = chocolate.desc
-        cell.chocolateImage?.image = chocolate.image
+        //FIXME: get the image from URL
+//        cell.chocolateImage?.image = chocolate.image
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let chocolate = chocolates[indexPath.row]
     }
     
     //MARK: Private methods
     
     private func loadSampleChocolates() {
-        let chocolate1 = Chocolate("Five Star", description: "My favourite")
-        let chocolate2 = Chocolate("Dairy Milk", description: "Nidhos favourite")
-        let chocolate3 = Chocolate("Lindt", description: "Rias favourite")
-        chocolates += [chocolate1, chocolate2, chocolate3]
+        
+        let decoder = JSONDecoder()
+        let jsonData = chocolateJSON.data(using: .utf8)!
+        chocolates = try! decoder.decode(Array<Chocolate>.self, from: jsonData)
     }
 }

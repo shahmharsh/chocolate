@@ -9,14 +9,9 @@
 import Foundation
 import UIKit
 
-class Chocolate {
-    private(set) var image: UIImage?
-    private(set) var name: String
-    private(set) var desc: String
-    
-    init(_ name: String, description desc:String) {
-        self.name = name
-        self.desc = desc
-        self.image = UIImage(named: "Chocolate")
-    }
+struct Chocolate : Decodable {
+    let imageUrl: URL
+    let name: String
+    let desc: String
+    let price: Float
 }
