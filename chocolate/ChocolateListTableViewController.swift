@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ChocolateListTableViewController: UITableViewController {
     
     let chocolateJSON = """
-[{ "name": "Five Star", "desc": "My favorite", "price": 100, "imageUrl": "http://www.gervasivineyard.com/assets/client/Image/Events/chocolate1.jpg" }, { "name": "Dairy Milk", "desc": "Nidhos favorite", "price": 120, "imageUrl": "http://www.gervasivineyard.com/assets/client/Image/Events/chocolate1.jpg" }, { "name": "Lindt", "desc": "Rias favorite", "price": 150, "imageUrl": "http://www.gervasivineyard.com/assets/client/Image/Events/chocolate1.jpg" }]
+[{ "name": "Five Star", "desc": "My favorite", "price": 100, "imageUrl": "https://static1.squarespace.com/static/57ca74c4197aea06e4799ae9/t/584ef868d482e93820814184/1481570485372/bluebox.jpg?format=500w" }, { "name": "Dairy Milk", "desc": "Nidhos favorite", "price": 120, "imageUrl": "https://static1.squarespace.com/static/57ca74c4197aea06e4799ae9/t/584ef868d482e93820814184/1481570485372/bluebox.jpg?format=500w" }, { "name": "Lindt", "desc": "Rias favorite", "price": 150, "imageUrl": "https://static1.squarespace.com/static/57ca74c4197aea06e4799ae9/t/584ef868d482e93820814184/1481570485372/bluebox.jpg?format=500w" }]
 """
     let cellIdentifier = "chocolateCellIdentifier"
     
@@ -47,8 +48,7 @@ class ChocolateListTableViewController: UITableViewController {
         let chocolate = chocolates[indexPath.row]
         cell.title.text = chocolate.name
         cell.desc.text = chocolate.desc
-        //FIXME: get the image from URL
-//        cell.chocolateImage?.image = chocolate.image
+        cell.chocolateImage.sd_setImage(with: chocolate.imageUrl, completed: nil)
         return cell
     }
     
